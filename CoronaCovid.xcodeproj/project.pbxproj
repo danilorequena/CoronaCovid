@@ -11,8 +11,12 @@
 		FF95C65B245861E50061F48D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95C65A245861E50061F48D /* SceneDelegate.swift */; };
 		FF95C65D245861E50061F48D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95C65C245861E50061F48D /* ViewController.swift */; };
 		FF95C660245861E50061F48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF95C65E245861E50061F48D /* Main.storyboard */; };
-		FF95C662245861E80061F48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF95C661245861E80061F48D /* Assets.xcassets */; };
 		FF95C665245861E80061F48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF95C663245861E80061F48D /* LaunchScreen.storyboard */; };
+		FF95C66D245863770061F48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF95C66C245863770061F48D /* Assets.xcassets */; };
+		FF95C66F2458C0C50061F48D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95C66E2458C0C50061F48D /* DetailViewController.swift */; };
+		FF95C6732458C3FC0061F48D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95C6722458C3FC0061F48D /* Country.swift */; };
+		FF95C6762458C6380061F48D /* AllCountrys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95C6752458C6380061F48D /* AllCountrys.swift */; };
+		FF95C6782458C8F70061F48D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95C6772458C8F70061F48D /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +25,13 @@
 		FF95C65A245861E50061F48D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF95C65C245861E50061F48D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF95C65F245861E50061F48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF95C661245861E80061F48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF95C664245861E80061F48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF95C666245861E80061F48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF95C66C245863770061F48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		FF95C66E2458C0C50061F48D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FF95C6722458C3FC0061F48D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		FF95C6752458C6380061F48D /* AllCountrys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountrys.swift; sourceTree = "<group>"; };
+		FF95C6772458C8F70061F48D /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				FF95C658245861E50061F48D /* AppDelegate.swift */,
 				FF95C65A245861E50061F48D /* SceneDelegate.swift */,
-				FF95C65C245861E50061F48D /* ViewController.swift */,
-				FF95C65E245861E50061F48D /* Main.storyboard */,
-				FF95C661245861E80061F48D /* Assets.xcassets */,
-				FF95C663245861E80061F48D /* LaunchScreen.storyboard */,
+				FF95C6742458C4020061F48D /* Models */,
+				FF95C6712458C3D30061F48D /* Views */,
+				FF95C6702458C3BA0061F48D /* Controllers */,
+				FF95C6792458C8FC0061F48D /* Service */,
+				FF95C66C245863770061F48D /* Assets.xcassets */,
 				FF95C666245861E80061F48D /* Info.plist */,
 			);
 			path = CoronaCovid;
+			sourceTree = "<group>";
+		};
+		FF95C6702458C3BA0061F48D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF95C65C245861E50061F48D /* ViewController.swift */,
+				FF95C66E2458C0C50061F48D /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF95C6712458C3D30061F48D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF95C65E245861E50061F48D /* Main.storyboard */,
+				FF95C663245861E80061F48D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF95C6742458C4020061F48D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF95C6722458C3FC0061F48D /* Country.swift */,
+				FF95C6752458C6380061F48D /* AllCountrys.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF95C6792458C8FC0061F48D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FF95C6772458C8F70061F48D /* Request.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF95C665245861E80061F48D /* LaunchScreen.storyboard in Resources */,
-				FF95C662245861E80061F48D /* Assets.xcassets in Resources */,
+				FF95C66D245863770061F48D /* Assets.xcassets in Resources */,
 				FF95C660245861E50061F48D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +184,11 @@
 			files = (
 				FF95C65D245861E50061F48D /* ViewController.swift in Sources */,
 				FF95C659245861E50061F48D /* AppDelegate.swift in Sources */,
+				FF95C6762458C6380061F48D /* AllCountrys.swift in Sources */,
 				FF95C65B245861E50061F48D /* SceneDelegate.swift in Sources */,
+				FF95C6782458C8F70061F48D /* Request.swift in Sources */,
+				FF95C6732458C3FC0061F48D /* Country.swift in Sources */,
+				FF95C66F2458C0C50061F48D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dobigaster.CoronaCovid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dobigaster.CoronaCovid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
