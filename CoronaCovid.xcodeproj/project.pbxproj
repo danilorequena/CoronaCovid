@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DB49A6C16917CF9F46767438 /* Pods_CoronaCovid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC97C22E9ACEE94797D2958 /* Pods_CoronaCovid.framework */; };
-		FF29C3B824C4F4CC008FE800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF29C3B724C4F4CC008FE800 /* Assets.xcassets */; };
 		FF3F38C524BF95FD00164EC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3F38C424BF95FD00164EC4 /* Assets.xcassets */; };
 		FF53BB6C24BBB29300BCA712 /* GeralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53BB6B24BBB29300BCA712 /* GeralViewController.swift */; };
 		FF53BB7124BBCE4B00BCA712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53BB7024BBCE4B00BCA712 /* Constants.swift */; };
@@ -292,7 +291,6 @@
 				FFBF91A3245C7629008649B7 /* InfosRings.xib in Resources */,
 				FF95C660245861E50061F48D /* Main.storyboard in Resources */,
 				FF3F38C524BF95FD00164EC4 /* Assets.xcassets in Resources */,
-				FF29C3B824C4F4CC008FE800 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SM9KCJGMUP;
 				INFOPLIST_FILE = CoronaCovid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,6 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SM9KCJGMUP;
 				INFOPLIST_FILE = CoronaCovid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
