@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UICircularProgressRing
 
 class DetailViewController: UIViewController {
     
@@ -29,6 +30,9 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let circularRing = UICircularProgressRing()
+//        viewInfos.addSubview(circularRing)
+        
         label.text = "Carregando..."
         loadInfos()
         setupViewInfos()
@@ -41,7 +45,7 @@ class DetailViewController: UIViewController {
     
     
     func loadInfos() {
-        Request.loadDetailPerCountry(name: name, onComplete: { (country) in
+        RequestPerCountry.loadDetailPerCountry(name: name, onComplete: { (country) in
             if let country = country {
                 self.countryflag = country
                 DispatchQueue.main.async {
@@ -62,7 +66,7 @@ class DetailViewController: UIViewController {
     }
     
     func loadImage(with flag: CovidPerCountry) {
-        let url = flag.countryInfo.flag
+        guard let url = flag.countryInfo?.flag else { return }
         guard let flagURL = URL(string: url) else { return }
             guard let data = try? Data(contentsOf: flagURL) else { return }
             self.ivFlag.image = UIImage(data: data)

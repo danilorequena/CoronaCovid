@@ -1,28 +1,27 @@
 //
-//  Request.swift
+//  RequestAllCountries.swift
 //  CoronaCovid
 //
-//  Created by Danilo Requena on 28/04/20.
+//  Created by Danilo Requena on 7/12/20.
 //  Copyright © 2020 Danilo Requena. All rights reserved.
 //
 
 import Foundation
 
-enum CovidError {
-    case url
-    case taskError(error: Error)
-    case noResponse
-    case noData
-    case responseStatusCode(code: Int)
-    case invalidJSON
-}
-
-class Request {
-    private static let basePath = "https://disease.sh/v2/countries/"
+class RequestAllCountries: NetworkProtocolType {
+    func get<T>(url: String, response: T.Type, completion: @escaping (Bool, T?) -> Void) where T : Decodable {
+        
+    }
+    
+    func post<T, EncodableType>(url: String, params: EncodableType?, response: T.Type, completion: @escaping (Bool, T?) -> Void) where T : Decodable, EncodableType : Encodable {
+        
+    }
+    
+    
     private static let session = URLSession.shared
     
-    class func loadDetailPerCountry(name: String, onComplete: @escaping (CovidPerCountry?) -> Void, onError: @escaping (CovidError) -> Void) {
-        guard let url = URL(string: basePath + name) else {
+    class func loadAll(onComplete: @escaping (CovidAllCountrys?) -> Void, onError: @escaping (CovidError) -> Void) {
+        guard let url = URL(string: Constants.allCountries) else {
             onError(.url)
             return
         }
@@ -38,7 +37,7 @@ class Request {
                 if response.statusCode == 200 {
                     guard let data = data else { return }
                     do {
-                        let countries = try JSONDecoder().decode(CovidPerCountry.self, from: data)
+                        let countries = try JSONDecoder().decode(CovidAllCountrys.self, from: data)
                         onComplete(countries)
                     } catch let jsonErr {
                         onError(.invalidJSON)
@@ -55,5 +54,4 @@ class Request {
         }
         datatask.resume()
     }
-}
-
+        }

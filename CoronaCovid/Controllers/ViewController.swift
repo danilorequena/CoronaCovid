@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btConsult: UIButton!
     
     var countries: String!
+    var service = RequestAllCountries()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +33,22 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         tfCountry.resignFirstResponder()
+        if segue.identifier == "segue" {
         let vc = segue.destination as! DetailViewController
         vc.name =  tfCountry.text
+        }
     }
 
     @IBAction func Consult(_ sender: Any) {
 //        var countryValue = tfCountry.text?.lowercased()
 //        country = countryValue
 //        print(country)
+    }
+    @IBAction func GoToGeneral(_ sender: Any) {
+        let viewModel = ListViewModel(service: self.service)
+        let listVc = GeralViewController()
+        navigationController?.pushViewController(listVc, animated: true)
+
     }
     
     func setupLogo() {
