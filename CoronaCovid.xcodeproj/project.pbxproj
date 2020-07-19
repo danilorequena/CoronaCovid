@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB49A6C16917CF9F46767438 /* Pods_CoronaCovid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC97C22E9ACEE94797D2958 /* Pods_CoronaCovid.framework */; };
+		FF29C3B824C4F4CC008FE800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF29C3B724C4F4CC008FE800 /* Assets.xcassets */; };
 		FF3F38C524BF95FD00164EC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3F38C424BF95FD00164EC4 /* Assets.xcassets */; };
 		FF53BB6C24BBB29300BCA712 /* GeralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53BB6B24BBB29300BCA712 /* GeralViewController.swift */; };
 		FF53BB7124BBCE4B00BCA712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53BB7024BBCE4B00BCA712 /* Constants.swift */; };
@@ -38,6 +39,7 @@
 		B046F415C304E80BB4247912 /* Pods-CoronaCovid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCovid.release.xcconfig"; path = "Target Support Files/Pods-CoronaCovid/Pods-CoronaCovid.release.xcconfig"; sourceTree = "<group>"; };
 		BF7E9FBBCEC9BD6581113568 /* Pods-CoronaCovid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoronaCovid.debug.xcconfig"; path = "Target Support Files/Pods-CoronaCovid/Pods-CoronaCovid.debug.xcconfig"; sourceTree = "<group>"; };
 		CFC97C22E9ACEE94797D2958 /* Pods_CoronaCovid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaCovid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF29C3B724C4F4CC008FE800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Covid/covid19-ios/coronavirus covid19/Assets.xcassets"; sourceTree = "<group>"; };
 		FF3F38C424BF95FD00164EC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Covid/covid19-ios/coronavirus covid19/Assets.xcassets"; sourceTree = "<group>"; };
 		FF53BB6B24BBB29300BCA712 /* GeralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeralViewController.swift; sourceTree = "<group>"; };
 		FF53BB7024BBCE4B00BCA712 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		FF95C657245861E50061F48D /* CoronaCovid */ = {
 			isa = PBXGroup;
 			children = (
+				FF29C3B724C4F4CC008FE800 /* Assets.xcassets */,
 				FF5FE64224BBE4CB00037FCB /* Extensions */,
 				FF5FE63F24BBE47900037FCB /* OverrideViews */,
 				FF95C658245861E50061F48D /* AppDelegate.swift */,
@@ -289,6 +292,7 @@
 				FFBF91A3245C7629008649B7 /* InfosRings.xib in Resources */,
 				FF95C660245861E50061F48D /* Main.storyboard in Resources */,
 				FF3F38C524BF95FD00164EC4 /* Assets.xcassets in Resources */,
+				FF29C3B824C4F4CC008FE800 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
